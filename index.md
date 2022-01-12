@@ -1,7 +1,8 @@
 Hello, world!
 
-**HERE IS A LINK TO THE LAB REPORT 1 WEEK 2 SUBPAGE**: [HERE!](lab-report-1-week-2.html)
-
+**HERE ARE LINKS TO THE LAB REPORT 1 WEEK 2 SUBPAGE**: <br>
+Method 1: [HERE!](lab-report-1-week-2.html) <br>
+Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
 
 _This is in italics_.
 
