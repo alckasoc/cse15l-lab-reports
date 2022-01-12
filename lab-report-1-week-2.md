@@ -1,0 +1,1 @@
+![](./cat_with_afro.png)
