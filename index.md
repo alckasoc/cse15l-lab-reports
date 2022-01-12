@@ -1,4 +1,7 @@
-Hello, world! EDIT!
+Hello, world!
+
+**HERE IS A LINK TO THE LAB REPORT 1 WEEK 2 SUBPAGE**: [HERE!](lab-report-1-week-2.html)
+
 
 _This is in italics_.
 
