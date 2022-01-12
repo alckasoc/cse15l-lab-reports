@@ -1,3 +1,3 @@
-This is a cat with an afro.
+This is a cat with an afro!
 
 ![](./cat_with_afro.png)
