@@ -11,7 +11,7 @@
 ## __Installing VSCode__
 Navigate to [here](https://code.visualstudio.com/Download). 
 
-![](./download_vscode.png)
+![](./website_img/week_2/download_vscode.PNG)
 _Figure 1: Downloading VSCode._
 
 The link should direct you to a page with an interface similar to the above. Then download the VSCode corresponding to your OS. Follow the default steps and the installation should be finished. This should be a simple process. 
@@ -19,7 +19,7 @@ The link should direct you to a page with an interface similar to the above. The
 ## __Remotely Connecting__
 To remotely connect is a complicated process. First, navigate over to account lookup [here](https://sdacs.ucsd.edu/~icc/index.php) and find your corresponding class ieng6 account. It should be something like "cse15lwi22abc@ieng6.ucsd.edu". The letters "abc" should be replaced with the 3 letters in your cse15l ieng6 account. Reset your password. Once you have reset your password, navigate over to the terminal in VSCode. To get to the terminal, click "Terminal" at the top and select "New Terminal". It should look something like the below: 
 
-![](./website_img/week_2/vscode_terminal.png)
+![](./website_img/week_2/vscode_terminal.PNG)
 _Figure 2: Opening terminal._
 
 Then you want to type in `ssh cse15lwi22abc@ieng6.ucsd.edu` with "abc" replaced with your 3 letters as mentioned above. The `ssh` command is for logging into __remote servers__ or machines. These are basically computers that you don't have sitting in front of you. Your computer is the local machine or the __client__. Running the command is as simple as typing it out and then hitting Enter. It will then prompt you for a password (which should be the new password after your password reset from above). That's it!
@@ -28,7 +28,7 @@ Then you want to type in `ssh cse15lwi22abc@ieng6.ucsd.edu` with "abc" replaced 
 
 Now let's try some commands! To clarify, in general and from what I understand now, the __terminal__ is another word for __command line__ or __command prompt__ or __shell__. If you are on Windows like me, we are locally on a Windows PowerShell when we open up the terminal in VSCode. However, after we connect to the ieng6 machines, we are in a different environment because the remote servers have a different OS. Windows and Linux shells share similar commands but have some differences. In this blog, we are covering the commands for Linux. 
 
-![](./website_img/week_2/commands.png)
+![](./website_img/week_2/commands.PNG)
 _Figure 3: A few basic commands._
 
 Of course, all the above commands are meant to be ran in your remote machine except for 2: the `scp` and `ssh` commands, which should be ran locally.
@@ -48,14 +48,14 @@ In the above example, we are simply copying the Hello.java in our current local 
 
 Then you can use the `ls` command to check that you successfully copied to file over to the remote machine.
 
-![](./website_img/week_2/hello_java.png)
+![](./website_img/week_2/hello_java.PNG)
 _Figure 5: Checking if the `scp` command worked._
 
 ## __Setting an SSH Key__
 
 This is even more complicated than remotely connecting. First, you want to type into your local VSCode terminal, `ssh-keygen`. You want to specify where you want to store the private and public keys (somewhere safe). For pass phrase, you want to skip those queries. We are setting up an SSH Key so that we don't need to enter our password every time we log in (and not enter _this_ pass phrase either!).This will generate a _public_ and a _private_ key (the public key will be the file with the `.pub` extension). Then, if you are on Windows, follow the extra steps [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation). For Windows users, this part can be a bit confusing. So here's a simplification.
 
-![](./website_img/week_2/windows_ssh_key.png)
+![](./website_img/week_2/windows_ssh_key.PNG)
 _Figure 6: Extra Steps for Windows Users._
 
 You want to run VSCode as an administrator (this means simply closing it now and right clicking VSCode on your desktop and pressing "Run as Administrator"). Run the first 3 commands in Figure 6 as normal. The fourth command, you should specify the full path to the keys as shown in the image. The file is most likely named `id_rsa` instead of `id)ed25519`. Once you have done that, `ssh` into your remote machine, and make a `.ssh` folder: `mkdir .ssh`. Then log out. Now, use the `scp` command to securely copy the `id_rsa.pub` (_public_ key) to the "~/.ssh/authorized_keys/" folder on the remote machine.
@@ -71,7 +71,7 @@ After this, you should be able to `ssh` into your remote machine without a passw
 
 At some point, you want to run things quickly and not have to retype things out. This is a simple task compared to setting up the SSH Key. You can press the Up Arrow Key on your keyboard when you are in the terminal to go to the previous command. 
 
-![](./website_img/week_2/optimizing_remote_running.png)
+![](./website_img/week_2/optimizing_remote_running.PNG)
 _Figure 8: Shortcut commands._
 
 Additionally, you can, as in Figure 8, run basic commands after you `ssh`. These commands were shown in an earlier section in this blog. Furthermore, you can copy multiple files (and securely copy multiple files). You can delimit multiple commands with the semicolon. So an example series of commands would be:
