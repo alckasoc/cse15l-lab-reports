@@ -11,7 +11,7 @@
 ## __Installing VSCode__
 Navigate to [here](https://code.visualstudio.com/Download). 
 
-<img src=".\website_img\week_2\download_vscode.png" />
+![](./website_img/week_2/download_vscode.png)
 _Figure 1: Downloading VSCode._
 
 The link should direct you to a page with an interface similar to the above. Then download the VSCode corresponding to your OS. Follow the default steps and the installation should be finished. This should be a simple process. 
