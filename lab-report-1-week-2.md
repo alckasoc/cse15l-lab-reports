@@ -87,63 +87,16 @@ Normally, you would secure copy your file from your local machine to the remote 
 ### __Worst Case__
 Let's say you have the `scp` command copied (with a new linebreak so the command automatically runs after pasting). Then we have 4 keystrokes: copying and pasting the command in (Ctrl + C, Ctrl + V). Without an SSH key, you would need to type in your password when you use the `scp` command. This is (_N_ * _i_) keystrokes where _N_ is the number of keystrokes for your password plus the enter key and _i_ is the number of times you had to try typing and entering your password. Then, we need to `ssh` into our remote server. Assuming you have the command stored somewhere, you copy and paste it into the terminal resulting in another 4 keystrokes (Ctrl + C, Ctrl + V). Without an SSH key, you must perform (_N_ * _j_) keystrokes. Once logged in, we must copy and paste both the compile and run commands for our java file. This is a total of 8 keystrokes. With this process in place, we have roughly [16 + (_N_ * _i_) + (_N_ * _j_) + _k_] keystrokes. 16 keystrokes under the constraint that we have our commands stored somewhere. _N_ keystrokes for our password (which includes the enter key) and (_N_ * _i_) amount of keystrokes where _i_ represents how many times you had to try typing in your password. Finally, you have _k_ extra keystrokes for errors. Not to mention, we have the chance of failing our authentication and thus timing out!
 
-$$
-\begin{array}{ll}
-  k_{worst} & = \quad e_{scp} \hspace{11em} (Eq.~1)\\
-  & \quad\quad +~e_{ssh} \\
-  & \quad\quad +~e_{javac} \\
-  & \quad\quad +~e_{java} \\
-  & \quad\quad +~e_{remote\_nav} \\
-  & \quad\quad +~e_{local\_nav} \\
-\end{array} \\
-
-{} \\
-
-\begin{equation*}
-where \left\{
-        \begin{array}{ll}
-            e_{scp} & \quad errors~in~scp~cmd~execution \\
-            e_{ssh} & \quad errors~in~ssh~execution \\
-            e_{javac} & \quad
-            errors~in~compile~execution \\
-            e_{java} & \quad
-            errors~in~file~execution \\
-            e_{remote\_nav} & \quad keystrokes~in~remote~navigation \\
-            e_{local\_nav} & \quad keystrokes~in~local~navigation \\
-        \end{array}
-    \right.
-\end{equation*} \\
-
-{} \\
-
-T_{worst} = 16 + (N * i) + (N * j) + k_{worst} \hspace{1em} (Eq.~2) \\ 
-subject~to~no~time~out
-$$
+![Image](./website_img/week_4/k_worst.PNG)
+![Image](./website_img/week_4/k_where.PNG)
+![Image](./website_img/week_4/t_worst.PNG)
 
 ### __Our Optimized Case__
 
 On the contrary, our series of optimized commands (paired with an SSH Key with no passphrase) illustrated in Figure 9 leads to a total of 8 keystrokes (Ctrl + C, Ctrl + V) for copying and pasting the both sets of commands.
 
-$$
-\begin{array}{ll}
-  k_{optimized} & = \quad e_{scp\_ssh} \hspace{8em} (Eq.~3)\\
-  & \quad\quad +~e_{javac\_java} \\
-\end{array} \\
-
-{} \\
-
-\begin{equation*}
-where \left\{
-        \begin{array}{ll}
-            e_{scp\_ssh} & \quad errors~in~scp~and~ssh~cmd~execution \\
-            e_{javac\_java} & \quad errors~in~javac~and~java~execution \\
-        \end{array}
-    \right.
-\end{equation*} \\
-
-{} \\
-
-T_{optimized} = 8 + k_{optimized} \hspace{7em} (Eq.~4) \\
-$$
+![Image](./website_img/week_4/k_opt.PNG)
+![Image](./website_img/week_4/k_opt_where.PNG)
+![Image](./website_img/week_4/t_opt.PNG)
 
 As such, we save 8 + (_N_ * _i_) + (_N_ * _j_) keystrokes and we have a lot less room for error! Plus, we don't have any constraint anymore!
