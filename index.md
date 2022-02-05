@@ -4,6 +4,10 @@ Hello, world!
 Method 1: [HERE!](lab-report-1-week-2.html) <br>
 Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
 
+**HERE ARE LINKS TO THE LAB REPORT 2 WEEK 4 SUBPAGE**: <br>
+Method 1: [HERE!](lab-report-2-week-4.html) <br>
+Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-2-week-4.html)
+
 _This is in italics_.
 
 __This is in bold.__
