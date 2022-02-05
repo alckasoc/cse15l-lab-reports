@@ -8,7 +8,7 @@ Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-1-wee
 Method 1: [HERE!](lab-report-2-week-4.html) <br>
 Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-2-week-4.html)
 
-Please just update!
+Please just update! !
 
 _This is in italics_.
 
