@@ -8,6 +8,10 @@ Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-1-wee
 Method 1: [HERE!](lab-report-2-week-4.html) <br>
 Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-2-week-4.html)
 
+**HERE ARE LINKS TO THE LAB REPORT 3 WEEK 6 SUBPAGE**: <br>
+Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
+
+
 Please just update!!!
 
 _This is in italics_.
