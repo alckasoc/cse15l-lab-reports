@@ -11,6 +11,8 @@ Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-2-wee
 **HERE ARE LINKS TO THE LAB REPORT 3 WEEK 6 SUBPAGE**: <br>
 Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
 
+**HERE ARE LINKS TO THE LAB REPORT 4 WEEK 8 SUBPAGE**: <br>
+Method 2: [HERE!](https://alckasoc.github.io/cse15l-lab-reports/lab-report-4-week-8.html)
 
 Please just update!!!
 
